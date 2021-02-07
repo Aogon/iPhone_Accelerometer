@@ -13,6 +13,10 @@
 		799DE19B25CF6F3800C8237C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799DE19925CF6F3800C8237C /* Main.storyboard */; };
 		799DE19D25CF6F4100C8237C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799DE19C25CF6F4100C8237C /* Assets.xcassets */; };
 		799DE1A025CF6F4100C8237C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799DE19E25CF6F4100C8237C /* LaunchScreen.storyboard */; };
+		799DE1AB25CF701400C8237C /* awa.png in Resources */ = {isa = PBXBuildFile; fileRef = 799DE1A925CF701400C8237C /* awa.png */; };
+		799DE1AC25CF701400C8237C /* suiheiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 799DE1AA25CF701400C8237C /* suiheiki.png */; };
+		799DE1AF25CFB14200C8237C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799DE1AE25CFB14200C8237C /* GameViewController.swift */; };
+		799DE1B225CFB15200C8237C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799DE1B125CFB15200C8237C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		799DE19C25CF6F4100C8237C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799DE19F25CF6F4100C8237C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799DE1A125CF6F4100C8237C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799DE1A925CF701400C8237C /* awa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awa.png; sourceTree = "<group>"; };
+		799DE1AA25CF701400C8237C /* suiheiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suiheiki.png; sourceTree = "<group>"; };
+		799DE1AE25CFB14200C8237C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		799DE1B125CFB15200C8237C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		799DE19225CF6F3800C8237C /* Accelerometer */ = {
 			isa = PBXGroup;
 			children = (
+				799DE1A825CF701400C8237C /* 13_Resource */,
 				799DE19325CF6F3800C8237C /* AppDelegate.swift */,
 				799DE19525CF6F3800C8237C /* SceneDelegate.swift */,
 				799DE19725CF6F3800C8237C /* ViewController.swift */,
@@ -63,8 +72,19 @@
 				799DE19C25CF6F4100C8237C /* Assets.xcassets */,
 				799DE19E25CF6F4100C8237C /* LaunchScreen.storyboard */,
 				799DE1A125CF6F4100C8237C /* Info.plist */,
+				799DE1AE25CFB14200C8237C /* GameViewController.swift */,
+				799DE1B125CFB15200C8237C /* ResultViewController.swift */,
 			);
 			path = Accelerometer;
+			sourceTree = "<group>";
+		};
+		799DE1A825CF701400C8237C /* 13_Resource */ = {
+			isa = PBXGroup;
+			children = (
+				799DE1A925CF701400C8237C /* awa.png */,
+				799DE1AA25CF701400C8237C /* suiheiki.png */,
+			);
+			path = 13_Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +146,9 @@
 			files = (
 				799DE1A025CF6F4100C8237C /* LaunchScreen.storyboard in Resources */,
 				799DE19D25CF6F4100C8237C /* Assets.xcassets in Resources */,
+				799DE1AC25CF701400C8237C /* suiheiki.png in Resources */,
 				799DE19B25CF6F3800C8237C /* Main.storyboard in Resources */,
+				799DE1AB25CF701400C8237C /* awa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799DE1B225CFB15200C8237C /* ResultViewController.swift in Sources */,
+				799DE1AF25CFB14200C8237C /* GameViewController.swift in Sources */,
 				799DE19825CF6F3800C8237C /* ViewController.swift in Sources */,
 				799DE19425CF6F3800C8237C /* AppDelegate.swift in Sources */,
 				799DE19625CF6F3800C8237C /* SceneDelegate.swift in Sources */,
@@ -289,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KRPZ4VFR6;
 				INFOPLIST_FILE = Accelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KRPZ4VFR6;
 				INFOPLIST_FILE = Accelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
